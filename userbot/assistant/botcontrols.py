@@ -39,8 +39,7 @@ cmhd = Config.COMMAND_HAND_LER
 
 @catub.bot_cmd(pattern="^/help$", from_users=Config.OWNER_ID)
 async def bot_help(event):
-    await event.reply(
-        f"""The commands in the bot are:
+    await event.reply(f"""The commands in the bot are:
 **Note : **__This commands work only in this bot__ {botusername}
 
 • **Cmd : **/uinfo <reply to user message>
@@ -58,8 +57,7 @@ async def bot_help(event):
 • **Cmd : **/broadcast
 • **Info : **__Reply to a message to get broadcasted to every user who started your bot. To get list of users use__ `{cmhd}bot_users`.
 • **Note : **__if user stoped/blocked the bot then he will be removed from your database that is he will erased from the bot_starters list.__
-"""
-    )
+""")
 
 
 @catub.bot_cmd(pattern="^/broadcast$", from_users=Config.OWNER_ID)
